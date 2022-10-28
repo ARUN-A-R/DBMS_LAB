@@ -1,0 +1,35 @@
+create database library1;
+use library;
+create table book(accession_no int primary key,title varchar(25),publisher varchar(25),year int,date_of_purchase date,status varchar(25));
+
+create table member(member_id varchar(25) primary key,name varchar(25),number_of_book_issued int,max_limit int);
+
+create table books_issue(accession_no int primary key,member_id varchar(25),date_of_issue date);
+
+
+insert into member values("20SD01","aafiya",2,5);
+insert into member values("20SD02","abhiram",4,5);
+insert into member values("20SD03","abhishek",3,5);
+insert into member values("20SD04","abin",3,5);
+insert into member values("20SD05","adarsh",5,5);
+insert into member values("20SD06","advait",1,5);
+insert into member values("20SD07","alvin",2,5);
+insert into member values("20SD08","anjali",5,5);
+insert into member values("20SD09","amalia",5,5);
+insert into member values("20SD10","arun",4,5);
+insert into member values("20SD11","arya",5,5);
+insert into member values("20SD12","ammu",1,5);
+insert into member values("20SD13","asif",3,5);
+insert into member values("20SD14","aron",2,5);
+insert into member values("20SD15","aksh",1,5);
+insert into member values("20SD16","vasu",3,5);
+insert into member values("20SD17","megha",1,5);
+insert into member values("20SD18","sana",3,5);
+insert into member values("20SD19","fida",2,5);
+insert into member values("20SD20","abhinav",3,5);
+
+select * from member;
+
+
+
+drop table member;

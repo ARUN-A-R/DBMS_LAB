@@ -1,0 +1,38 @@
+create databse college1;
+use college1;
+
+create table student(Roll_no int primary key,name varchar(20),category varchar(25),district varchar(25),state varchar(25));
+
+create table student_rank(Roll_no int,mark int,rank int);
+
+insert into student values(1,"amal","general","kozhikode","kerala");
+insert into student values(2,"akhil","general","kollam","kerala");
+insert into student values(3,"arjun","obc","malapuram","kerala");
+insert into student values(4,"amala","sc","kannur","kerala");
+insert into student values(5,"katherin","sc","kollam","kerala");
+insert into student values(6,"ammu","st","thrissur","kerala");
+insert into student values(7,"lukakku","st","kannur","kerala");
+insert into student values(8,"anusha","obc","malapuram","kerala");
+insert into student values(9,"jijil","general","kozhikode","kerala");
+insert into student values(10,"anusree","general","kollam","kerala");
+
+insert into student_rank values(1,100,1);
+insert into student_rank values(2,100,1);
+insert into student_rank values(3,97,3);
+insert into student_rank values(4,96,4);
+insert into student_rank values(5,92,5);
+insert into student_rank values(6,90,6);
+insert into student_rank values(7,90,6);
+insert into student_rank values(8,83,8);
+insert into student_rank values(9,80,78);
+insert into student_rank values(10,75,75);
+
+
+
+select * from student;
+
+select * from student_rank;
+
+
+drop table student;
+drop table student_rank;
